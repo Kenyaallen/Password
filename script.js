@@ -4,7 +4,7 @@ var passwordText = document.querySelector("#password");
 var letter = "abcdefghijklmnopqrstuvwxyz";
 var letterUpp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var number = "0123456789";
-var symbol = "!@#$%^&*_-+=][|<>?/`~";
+var symbol = "!@#$%^&*-+=?/~";
 
 
 // Password generation function
