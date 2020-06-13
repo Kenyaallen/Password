@@ -1,4 +1,4 @@
-// Assignment Code
+// This assigns the characters that will be used for the password
 var generateBtn = document.querySelector("#generate");
 var passwordText = document.querySelector("#password");
 var letter = "abcdefghijklmnopqrstuvwxyz";
@@ -7,11 +7,11 @@ var number = "0123456789";
 var symbol = "!@#$%^&*-+=?/~";
 
 
-// Password generation function
+// This allows you to generate the password
 function writePassword() {
 
 
-  // Password Length prompt
+  // Tells the user the parameters of the password
   var userLet = prompt("The length of your password must be between 8 - 128 characters.  Type in a number between 8 and 128, Thank You! ");
   if (userLet < 8 || userLet > 128) {
     var lengthIncorrect = alert("Invalid password length!! Remember YOU MUST choose a length between 8 - 128")
@@ -26,24 +26,24 @@ function writePassword() {
     var userLow = confirm("Would you like your password to contain lower case letters?");
     if (userLow) {
         alert("It's been added")
-    }
+       }
 
 
-    // This asks if they would like to have upper case letters
+    // This asks if they would like to have upper case letters in their password
     var userUpp = confirm("Would you like your password to contain upper case letters?");
     if (userUpp) {
         alert("It's been added")
     }
 
 
-    // This asks if they would like to have numbers
+    // This asks if they would like to have numbers in their password
     var userNum = confirm("Would you like your password to contain numbers?");
     if (userNum) {
         alert("It's been added")
     }
 
 
-    // This asks if they would like to have special characters
+    // This asks if they would like to have special characters in their password
     var userSym = confirm("Would you like your password to contain special characters?");
     if (userSym) {
         alert("It's been added")
@@ -52,12 +52,12 @@ function writePassword() {
 
     // This is used to monitor if they choose a number below 8 or above 128 for their password length
     if (userLow === false && userUpp === false && userNum === false && userSym === false) {
-        alert("You need to select at least one character type before a password can be generated")
+        alert("You HAVE to select AT LEAST ONE CHARACTER type before a password can be generated")
     }
   }
 
 
-  // Password make up
+  // Based on the choices selected this will determine the random password
   passwordMakeUp = "";
 
 
@@ -75,7 +75,7 @@ function writePassword() {
   }
 
 
-  // Password Generator function
+  // This will display the password created
   password = "";
 
 
@@ -91,5 +91,5 @@ function writePassword() {
 };
 
 
-// Add event listener to generate button
+// Event Listener
 generateBtn.addEventListener("click", writePassword)
