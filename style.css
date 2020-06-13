@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* This manipulates the attributes of the title*/
+h1 {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: rgb(209, 58, 176);
+}
+
+
+.card {
+    margin: 0 auto;
+    max-width: 800px;
+    height: 200px;
+    height: 50vw;
+    background-color: dimgray;
+}
+
+
+textarea {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 400%;
+    color: darkorchid;
+    padding-top: 2%;
+}
+
+
+.card-body, 
+.card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    margin: 40px;
+}
+
+
+.card-footer {
+    height: 10%;
+}
+
+
+.button {
+    padding: 30px;
+    border-radius: 50px;
+    border-color: black;
+    color: black;
+    background-color: rgb(209, 58, 176);
+    font-size: 30px;
+}
+.button:hover {
+    background-color: rgb(209, 58, 176);
+}
+.button:focus {
+    background-color: rgb(209, 58, 176);
+    outline: none;
+}
+
+
+@media screen and (max-width: 1090px) {
+    .card {
+        margin-top: 100px;
+    }
+    .btn {
+        margin-top: 100px;
+    }
+}
+  
+  @media screen and (max-width: 500px) {
+    .btn {
+      font-size: 1rem;
+      margin-top: 150px;
+    }
+    #password {
+        font-size: 1rem;
+    }
+  }
